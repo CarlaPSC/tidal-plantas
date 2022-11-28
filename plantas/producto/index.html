@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Tidal Plantas</title>
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <main class="app">
+        <div class="__back">
+            <a href="/plantas">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="container">
+            <div class="__app-bar">
+                <div class="user">
+                    <div class="user-container" data-modal="user-modal">
+                        <div class="user-menu">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="user-image">
+                            <img src="/assets/img/profile.jpeg" alt="User Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="__individual-product">
+                <div class="title-product">
+                    <h1>Maecenas cursus orci eu egestas</h1>
+                    <span>S/14.50</span>
+                </div>
+                <div class="product-image">
+                    <img src="/assets/img/product-1.jpg" alt="Product">
+                </div>
+                <div class="product-information">
+                    <div class="characteristics">
+                        <div>
+                            <i class="fa-solid fa-sun"></i>
+                            <span>15°C</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <span>10kg</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            <span>20cm</span>
+                        </div>
+                    </div>
+                    <div class="add-list">
+                        <div class="favorites">
+                            <a href="#">Agregar a mi lista</a>
+                        </div>
+                        <div class="buy">
+                            <a href="/cart">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <div class="description">
+                            <h2>Descripción</h2>
+                            <p>Sed eget pharetra neque. Aliquam porta ligula sed ipsum suscipit pellentesque.
+                                Suspendisse luctus augue libero, non sodales dolor viverra et.</p>
+                        </div>
+                        <div class="description">
+                            <h2>Tips para regar</h2>
+                            <p>Suspendisse rhoncus massa id sollicitudin egestas. Vivamus orci turpis, pulvinar laoreet
+                                felis non, venenatis mattis ligula. Fusce ut nisl vel.</p>
+                        </div>
+                        <div class="description">
+                            <h2>Tips de cuidados</h2>
+                            <p>Pellentesque lectus nisl, mollis quis augue sit amet, maximus ultricies elit. In blandit
+                                odio lacus, a eleifend purus ultrices ut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="__user-menu" id="user-modal">
+            <div class="container">
+                <div class="modal-exit">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="user-menu-image">
+                    <img src="/assets/img/profile.jpeg" alt="User Image">
+                </div>
+                <div class="user-menu-list"">
+                    <a href="/cart" class="cart">Mi lista</a>
+                    <ul id="user-menu"></ul>
+                    <a href="/" class="logout">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>

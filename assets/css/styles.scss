@@ -1,0 +1,33 @@
+// --- Variables --- //
+@import 'variables';
+
+/* --- Fuentes --- */
+@import 'fonts';
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $dark;
+}
+
+/* --- Plantillas ---*/
+@import 'layout';
+
+/* --- Pagina bienvenida --- */
+@import 'presentation';
+
+/* --- Pagina de inicio --- */
+@import 'home';
+
+/* --- Pagina para el cambio de dirección --- */
+@import 'address';
+
+/* --- Pagina de carrito --- */
+@import 'cart';
+
+/* --- Pagina de productos -- */
+@import 'products';
+
+/* --- Pagina de producto individual --- */
+@import 'product';

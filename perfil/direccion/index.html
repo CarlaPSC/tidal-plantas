@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirección - Tidal Plantas</title>
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <main class="app">
+        <div class="container">
+            <div class="__back">
+                <a href="/home">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="__form-address">
+                <div>
+                    <div class="logo">
+                        <img src="/assets/img/logo.png" alt="Tidal Plantas">
+                    </div>
+                    <div class="message">
+                        <h2>Ayudanos con tu envio</h2>
+                        <p>Indicanos cómo llegar, para darte un envío seguro para tus plantas.</p>
+                    </div>
+                    <div class="form-address">
+                        <form>
+                            <div class="input">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="number" name="phone" id="phone" placeholder="Teléfono (fijo o celular)">
+                            </div>
+                            <div class="select">
+                                <select name="region" id="region" class="input"">
+                                    <option value="">Region</option>
+                                </select>
+                                <select name="region" id="region" class="input"">
+                                    <option value="">Provincia</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input type="text" name="location" id="location" placeholder="Dirección">
+                            </div>
+                            <div class="input">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" name="zip" id="zip" placeholder="Codigo postal">
+                            </div>
+                            <div class="submit">
+                                <a href="#" class="btn-submit">Siguiente</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="__user-menu" id="user-modal">
+            <div class="container">
+                <div class="modal-exit">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="user-menu-image">
+                    <img src="/assets/img/profile.jpeg" alt="User Image">
+                </div>
+                <div class="user-menu-list"">
+                    <a href="/cart" class="cart">Mi lista</a>
+                    <ul id="user-menu"></ul>
+                    <a href="/" class="logout">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/menu.js"></script>
+</body>
+</html>

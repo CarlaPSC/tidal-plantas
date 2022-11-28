@@ -1,0 +1,165 @@
+.app {
+    .__welcome-image {
+        height: 75vh;
+        position: relative;
+        background: url('/assets/img/background-1.jpg');
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    
+        .welcome {
+            padding: 24px;
+            text-align: center;
+
+            img {
+                width: 230px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .__user-options {
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .login-button {
+            margin-bottom: 18px;
+
+            a {
+                background: $primary;
+                display: inline-block;
+                color: $light;
+                text-align: center;
+                width: 100%;
+                padding: 18px 0;
+                border-radius: 34px;
+                font-size: $medium;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+
+        .register-link {
+            a {
+                text-align: center;
+                width: 100%;
+                display: inline-block;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: $medium;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .login {
+        background-position: bottom right !important;
+
+        .logo {
+            text-align: center;
+
+            img {
+                width: 230px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .register {
+        background-position: bottom left !important;
+
+        .logo {
+            text-align: center;
+
+            img {
+                width: 58px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .__auth {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: none;
+        width: 100%;
+        background: #ffffff;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../img/wave.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: ease .3s;
+
+        &.open {
+            display: flex;
+        }
+
+        .auth-form {
+            margin-top: 40px;
+
+            form {
+                .submit {
+                    margin-top: 28px;
+                    margin-bottom: 52px;
+                    a {
+                        background: $primary;
+                        width: 100%;
+                        padding: 18px 0;
+                        font-size: $medium;
+                        color: $light;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        overflow: hidden;
+                        border-radius: 34px;
+                        cursor: pointer;
+                        display: inline-block;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+                }
+
+                .auth-providers {
+                    .or {
+                        text-align: center;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                    }
+
+                    .btn-provider {
+                        margin-bottom: 10px;
+
+                        a {
+                            background: $light;
+                            text-decoration: none;
+                            width: 100%;
+                            display: inline-flex;
+                            padding: 10px 0;
+                            border-radius: 34px;
+                            overflow: hidden;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 6px;
+                            border: 3px solid $primary;
+
+                            i {
+                                color: $primary;
+                                font-size: 22px;
+                            }
+
+                            span {
+                                font-size: $medium;
+                                font-weight: 500;
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

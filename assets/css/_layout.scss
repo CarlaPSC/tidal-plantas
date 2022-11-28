@@ -1,0 +1,196 @@
+body {
+	background: linear-gradient(-45deg, #2e4e2c, #FAF6BB, #7DAA7B);
+    user-select: none;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+p, span, a, label, input, button {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: $small;
+    color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-size: $large;
+    color: $dark;
+}
+
+.app {
+    max-width: 414px;
+    margin: 0 auto;
+    height: 100vh;
+    background: $light;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+    overflow: auto;
+    position: relative;
+
+    .__back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 40px;
+        margin-left: 56px;
+
+        i {
+            font-size: 28px;
+            color: $primary;
+        }
+    }
+
+    .modal-exit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+        margin-right: 20px;
+
+        i {
+            font-size: 28px;
+            color: $primary;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 80%;
+            }
+        }
+    }
+
+    .__user-menu {
+        background: $third;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        .user-menu-image {
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 40px;
+
+            img {
+                width: 220px;
+                vertical-align: top;
+                border-radius: 100%;
+            }
+        }
+
+        .user-menu-list {
+            text-align: center;
+
+            .cart {
+                margin-bottom: 34px;
+                display: inline-block;
+                font-size: 26px;
+                font-weight: 600;
+                font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+                color: $primary;
+                text-decoration: none;
+                border: 2px solid $primary;
+                border-radius: 34px;
+                padding: 8px 22px;
+            }
+
+            ul {
+                list-style: none;
+                text-align: center;
+
+                li {
+                    margin-bottom: 34px;
+                    a {
+                        text-decoration: none;
+
+                        span {
+                            display: block;
+                        }
+    
+                        .item-title {
+                            font-size: 26px;
+                            color: $primary;
+                            font-weight: 600;
+                            font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+                        }
+
+                        .item-subtitle {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .logout {
+                font-size: 16px;
+                font-weight: 600;
+                font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+                text-decoration: none;
+                color: $primary
+            }
+        }
+    }
+
+    .input {
+        background: rgba(53, 53, 52, .1);
+        padding: 14px 16px;
+        margin-bottom: 14px;
+        overflow: hidden;
+        border-radius: 14px;
+        display: inline-flex;
+        gap: 6px;
+        width: 100%;
+        font-size: $medium;
+
+        i {
+            width: 8%;
+        }
+
+        input {
+            background: transparent;
+            border: none !important;
+            outline: none;
+            margin: 0;
+            padding: 0;
+            width: 92%;
+
+            &::placeholder {
+                color: $dark;
+                font-weight: 500;
+                font-size: $medium;
+            }
+        }
+    }
+
+    .checkbox {
+        display: inline-flex;
+        gap: 6px;
+        width: 100%;
+        margin: 6px;
+
+        input {
+            width: 14px;
+            font-size: 13px;
+        }
+    }
+}
+
+.container {
+    width: $container;
+    max-width: $container;
+    margin: $containerMargin;
+}

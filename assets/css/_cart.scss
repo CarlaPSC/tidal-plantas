@@ -1,0 +1,169 @@
+.app {
+    .__cart-content {
+        margin-top: 60px;
+        position: relative;
+
+        .cart-title {
+            margin-bottom: 20px;
+            
+            h2 {
+                color: $primary !important;
+            }
+        }
+
+        .cart-list {
+            .cart-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .checkbox {
+                    width: 10%;
+                }
+
+                .cart-item-content {
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: $third;
+                    padding: 10px;
+                    border-radius: 14px;
+
+                    .item-image {
+                        margin-right: 12px;
+                        img {
+                            width: 68px;
+                            vertical-align: top;
+                            border-radius: 14px;
+                        }
+                    }
+
+                    .item-info {
+                        .title {
+                            h4 {
+                                font-size: 14px;
+                                font-family: 'Lato', Arial, Helvetica, sans-serif;
+                            }
+                        }
+
+                        .price {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 8px;
+                            h4 {
+                                font-size: 22px;
+                                font-family: 'Lato', Arial, Helvetica, sans-serif;
+                            }
+
+                            .more {
+                                margin-top: -4px;
+                                padding: 4px 7px;
+                                border-radius: 14px;
+                                border: 2px solid $secondary;
+                                button {
+                                    background: none;
+                                    border: none;
+                                    color: $secondary;
+                                    font-family: 'Lato', Arial, Helvetica, sans-serif;
+                                }
+                                span {
+                                    padding: 0 8px;
+                                    font-size: 12px;
+                                    font-family: 'Lato', Arial, Helvetica, sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkout {
+            position: fixed;
+            bottom: 0;
+            width: 300px;
+
+            .coupon {
+                margin-bottom: 20px;
+                .input-coupon {
+                    width: 100%;
+                    border: 1px solid rgba(53, 53, 52, .4);
+                    padding:8px 12px;
+                    border-radius: 14px;
+    
+                    input {
+                        border: none;
+                        background: none;
+                        width: 69%;
+                        outline: none;
+    
+                        &::placeholder {
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                    }
+    
+                    button {
+                        background: $secondary;
+                        border: none;
+                        padding: 10px 12px;
+                        color: $light;
+                        font-size: 16px;
+                        border-radius: 14px;
+                    }                    
+                }
+            }
+
+            .summary {
+                .item-price {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+
+                    .price {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            hr {
+                border: .1px solid $primary;
+                opacity: 80%;
+                margin-bottom: 20px;
+            }
+
+            .total {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .final-price {
+                    span {
+                        font-size: 14px;
+                        color: $primary;
+                    }
+
+                    h4 {
+                        font-size: 24px;
+                        color: $primary;
+                    }
+                }
+
+                .btn-checkout {
+                    a {
+                        background: $primary;
+                        padding: 14px 16px;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: $light;
+                        text-decoration: none;
+                        border-radius: 24px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

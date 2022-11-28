@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas - Tidal Plantas</title>
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <main class="app">
+        <div class="__back">
+            <a href="/home">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="container">
+            <div class="__app-bar">
+                <div class="user">
+                    <div class="user-container" data-modal="user-modal">
+                        <div class="user-menu">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="user-image">
+                            <img src="/assets/img/profile.jpeg" alt="User Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-bar">
+                <div class="input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="q" id="query" placeholder="Buscar">
+                </div>
+            </div>
+            <div class="__plants-title">
+                <h1>Plantas</h1>
+            </div>
+            <div class="__plants">
+                <div class="title">
+                    <h2>Todas las plantas</h2>
+                </div>
+                <div class="products" id="list-plants">
+
+                </div>
+            </div>
+            <div class="__plants">
+                <div class="title">
+                    <h2>Por tiempo limitado</h2>
+                </div>
+                <div class="products" id="list-limited-plants">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="__user-menu" id="user-modal">
+            <div class="container">
+                <div class="modal-exit">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="user-menu-image">
+                    <img src="/assets/img/profile.jpeg" alt="User Image">
+                </div>
+                <div class="user-menu-list"">
+                    <a href="/cart" class="cart">Mi lista</a>
+                    <ul id="user-menu"></ul>
+                    <a href="/" class="logout">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/plantas.js"></script>
+    <script src="/assets/js/limited.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/menu.js"></script>
+</body>
+</html>

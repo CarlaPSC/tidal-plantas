@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Tidal Plantas</title>
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <main class="app">
+        <section class="__welcome-image">
+            <div class="container">
+                <div class="welcome">
+                    <a href="/">
+                        <img src="/assets/img/welcome.png" alt="Bienvenido a Tidal Plantas">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="__user-options">
+            <div class="container">
+                <div class="login-button">
+                    <a data-modal="login-modal">Iniciar sesión</a>
+                </div>
+                <div class="register-link">
+                    <a data-modal="register-modal">¿Eres nuevo? Crea una aquí</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="__auth login" id="login-modal">
+            <div class="modal-exit">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/img/isologotipo.png" alt="Tidal Plantas">
+                </div>
+                <div class="auth-form">
+                    <form action="POST">
+                        <div class="input">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input placeholder="Correo electrónico" type="email" name="email" id=""email>
+                        </div>
+                        <div class="input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input placeholder="Contraseña" type="password" name="password" id="password">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Recuérdame</label>
+                        </div>
+                        <div class="submit">
+                            <a href="/home">Iniciar sesión</a>
+                        </div>
+
+                        <div class="auth-providers">
+                            <div class="or">
+                                <span>O hazlo con</span>
+                            </div>
+                            <div class="btn-provider">
+                                <a href="https://www.google.com.pe" target="_blank">
+                                    <i class="fa-brands fa-google"></i>
+                                    <span>Continuar con Google</span>
+                                </a>
+                            </div>
+                            <div class="btn-provider">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <span>Continuar con Facebook</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="__auth register" id="register-modal">
+            <div class="modal-exit">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/img/logo.png" alt="Tidal Plantas">
+                </div>
+                <div class="auth-form">
+                    <form action="POST">
+                        <div class="input">
+                            <i class="fa-solid fa-user"></i>
+                            <input placeholder="Nombre" type="text" name="name" id=""name>
+                        </div>
+                        <div class="input">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input placeholder="Correo electrónico" type="email" name="email" id=""email>
+                        </div>
+                        <div class="input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input placeholder="Contraseña" type="password" name="password" id="password">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms">Aceptó lo terminos y condiciones de uso.</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="news" id="news">
+                            <label for="news">¡Claro! Enviame noticias y ofertas a mi correo.</label>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Regístrate</button>
+                        </div>
+
+                        <div class="auth-providers">
+                            <div class="or">
+                                <span>O hazlo con</span>
+                            </div>
+                            <div class="btn-provider">
+                                <a href="https://www.google.com.pe" target="_blank">
+                                    <i class="fa-brands fa-google"></i>
+                                    <span>Continuar con Google</span>
+                                </a>
+                            </div>
+                            <div class="btn-provider">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <span>Continuar con Facebook</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

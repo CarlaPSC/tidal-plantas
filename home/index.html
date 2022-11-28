@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidal Plantas</title>
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <main class="app">
+        <div class="container">
+            <div class="__home-title">
+                <h2>Haz tu pedido aquí</h2>
+            </div>
+            <div class="__app-bar">
+                <div class="user">
+                    <div class="user-container" data-modal="user-modal">
+                        <div class="user-menu">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="user-image">
+                            <img src="/assets/img/profile.jpeg" alt="User Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="_search-bar">
+                <div class="search-title">
+                    <h2>¿Que es lo que desea?</h2>
+                </div>
+                <div class="search">
+                    <form action="GET" id="search">
+                        <div class="input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="q" id="query" placeholder="Buscar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="_categories_list" id="categories">
+                
+            </div>
+        </div>
+
+        <div class="__user-menu" id="user-modal">
+            <div class="container">
+                <div class="modal-exit">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="user-menu-image">
+                    <img src="/assets/img/profile.jpeg" alt="User Image">
+                </div>
+                <div class="user-menu-list"">
+                    <a href="/cart" class="cart">Mi lista</a>
+                    <ul id="user-menu"></ul>
+                    <a href="/" class="logout">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/categories.js"></script>
+    <script src="/assets/js/menu.js"></script>
+</body>
+</html>

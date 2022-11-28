@@ -1,0 +1,95 @@
+.app {
+    .__home-title {
+        background: $primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 24px;
+        padding: 16px 28px 16px 58px;
+        overflow: hidden;
+        border-radius: 0 34px 34px 0;
+
+        h2 {
+            color: $light;
+            font-size: 16px;
+        }
+    }
+
+    .__app-bar {
+        padding-top: 24px;
+
+        .user {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .user-container {
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 8px;
+
+                .user-menu {    
+                    i {
+                        font-size: 20px;
+                    }
+                }
+                .user-image {
+                    overflow: hidden;
+                    border-radius: 100px;
+    
+                    img {
+                        width: 52px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+
+    ._search-bar {
+        margin-top: 40px;
+
+        .search-title {
+            text-align: center;
+            margin-bottom: 20px;
+
+            h2 {
+                color: $primary;
+            }
+        }
+    }
+
+    ._categories_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin-top: 40px;
+
+        .category-url {
+            margin-bottom: 16px;
+            text-decoration: none;
+
+            .category-item {
+                width: 142px;
+                height: 142px;
+                border-radius: 18px;
+                padding-top: 12px;
+                background-position: center !important;
+                background-size: cover !important;
+
+                h4 {
+                    font-size: 14px;
+                    text-align: center;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .open {
+        display: flex !important;
+    }
+}
